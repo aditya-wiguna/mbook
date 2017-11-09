@@ -1,0 +1,400 @@
+@font-face{
+	font-family: ubuntu;
+	src: '../font/Ubuntu-Regular.ttf';
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: ubuntu;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.row{
+	width: 100%;
+	display: inline-block;
+	min-height: 40px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12{
+	display: inline-block;
+	min-height: 40px;
+}
+
+.col-1{
+	width: 8.33%;
+}
+
+.col-2{
+	width: 16.66%;
+}
+
+.col-3{
+	width: 25%;
+}
+
+.col-4{
+	width: 33.33%;
+}
+
+.col-5{
+	width: 41.66%;
+}
+
+.col-6{
+	width: 50%;
+}
+
+.col-7{
+	width: 58.33%;
+}
+
+.col-8{
+	width: 66.66%;
+}
+
+.col-9{
+	width: 75%;
+}
+
+.col-10{
+	width: 83.33%;
+}
+
+.col-11{
+	width: 91.66%;
+}
+
+.col-12{
+	width: 100%;
+}
+
+/*Bagin Login*/
+.login{
+	background: #2196F3;
+}
+
+.login .card{
+	background: #FAFAFA;
+	padding: 20px;
+	margin-top: 100px;
+}
+
+.login input[type='text'], .login input[type='password'], select{
+	background: #E0E0E0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	border: 2px solid #E0E0E0;
+	width: 100%;
+}
+
+.register input[type='password']{
+	background: #E0E0E0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	border: 2px solid #E0E0E0;
+	width: 100%;
+}
+
+.login input[type='text']:focus, input[type='password']:focus, select:focus{
+	outline: none;
+}
+
+.btn{
+	background: #2196F3;
+	border: 2px solid #2196F3;
+	color: #fafafa;
+	padding: 10px 25px;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.card h3{
+	color: #2196F3;
+	font-size: 30px;
+}
+
+.login .col-5{
+	float: none;
+	margin: 0 auto;
+	display: block;
+}
+/*End Bagian Login*/
+
+/*Bagin Register*/
+.register{
+	background: #2196F3;
+}
+
+.register .card{
+	background: #FAFAFA;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+.register input[type='text'], input[type='password'], select{
+	background: #E0E0E0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	border: 2px solid #E0E0E0;
+	width: 100%;
+}
+
+.register input[type='text']:focus, input[type='password']:focus, select:focus{
+	outline: none;
+}
+
+.register .col-5{
+	float: none;
+	margin: 0 auto;
+	display: block;
+}
+/*End Bagian Register*/
+
+.nav{
+	width: 100%;
+	background: #1E88E5;
+	height: 70px;
+	position: fixed;
+	box-shadow: 0px 2px 0px #fbfbbf;
+}
+
+.menu ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 25px;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+.side-nav{
+	background: #fff;
+	position: fixed;
+	height: 100vh;
+	box-shadow: 0px 2px 0px 2px #bfbfbf;
+}
+
+.side-nav ul li{
+	list-style: none;
+	width: 100%;
+	padding: 20px 0px;
+}
+
+.side-nav ul li a{
+	width: 100%;
+	text-decoration: none;
+	color: #1E88E5;
+	padding: 0px 20px;
+}
+
+.side-nav ul li:hover{
+	background: #eeeeee;
+	cursor: pointer;
+}
+
+.side-nav ul .active{
+	background: #eeeeee;
+}
+
+.side-nav ul li:first-child:hover{
+	background: #fff;
+}
+
+.side-nav ul li:first-child{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.side-nav #logo{
+	color: #1E88E5;
+	font-size: 25px;
+	text-decoration: none;
+	padding: 0px;
+	font-weight: bold;
+}
+
+main{
+	padding-top: 100px;
+	margin-left: 230px;
+}
+
+.count{
+	background: #2196F3;
+	color: white;
+	padding: 10px;
+	margin: 0px 5px;
+	border-radius: 5px;
+}
+
+.line{
+	width: 100%;
+	height: 2.5px;
+	background: #bfbfbf;
+}
+
+.box{
+	padding: 10px 0px;
+	box-shadow: 0px 1px 0px #bfbfbf;
+}
+
+.box a{
+	text-decoration: none;
+	color: #000;
+}
+
+.box p{
+	margin-bottom: 7px;
+}
+
+table td, th{
+	padding:15px 10px;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+
+table{
+	width: 100%;
+}
+
+table tr{
+	/*border-bottom: 1px solid #000;*/
+	box-shadow: 0px 1px 0px #d0d0d0;
+}
+
+.red{
+	background: #F44336;
+	border: 2px solid #F44336;
+}
+
+input[type='text'], input[type='password'], textarea{
+	border: 2px solid #bfbfbf;
+	font-size: 18px;
+	padding: 5px 0px;
+	width: 100%;
+	background: #fff;
+}
+
+input[type='text']:focus, input[type='password']:focus{
+	border: 2px solid #1E88E5;
+	outline: none;
+}
+
+#logout{
+	background: transparent;
+	border: 2px solid transparent;
+	color: #1E88E5;
+	padding: 0px 20px;
+	font-size: 16px;
+}
+
+#logout:hover{
+	cursor: pointer;
+}
+
+/* Modal */
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content{
+	background: #fefefe;
+	margin: 5% auto;
+	/* padding: 20px; */
+	border: 1px solid #888;
+	width: 80%;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+#close{
+	color: #fff;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#close:hover, #close:focus{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header{
+	padding: 10px 16px;
+	background: #1E88E5;
+	color: #fff;
+}
+
+.modal-body{
+	padding: 10px 16px;
+}
+
+.modal-footer{
+	padding: 10px 16px;
+	background: #1E88E5;
+	color: #fff;
+}
+
+.text-white{
+	color: #fff;
+}
+
+.text-blue{
+	color: #1E88E5;
+}
+
+/* Animation */
+@keyframes animatetop{
+	from{top: -300px; opacity: 0;}
+	to{top: 0; opacity: 1;}
+}
+
+/*RESPONSIVE*/
+@media(max-width: 768px){
+	.side-nav{
+		display: none;
+	}
+
+	main{
+		margin-left: 0px; 
+	}
+}
