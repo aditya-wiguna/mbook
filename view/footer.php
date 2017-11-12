@@ -18,6 +18,14 @@
 	}
 ?>
 
+<?php
+	if ($page == 'user') {
+?>
+<script type="text/javascript" src="../assets/js/user.js"></script>
+<?php
+	}
+?>
+
 <script type="text/javascript" src="../assets/js/link.js"></script>
 </body>
 </html>

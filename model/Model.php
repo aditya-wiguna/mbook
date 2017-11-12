@@ -36,6 +36,26 @@ if (isset($_POST['action'])) {
 		echo $buku->delete_buku();
 	}
 
+	if ($_POST['action'] == 'insert distributor') {
+		echo $distributor->create();
+	}
+
+	if ($_POST['action'] == 'single distributor' ) {
+		echo $distributor->show();
+	}
+
+	if ($_POST['action'] == 'update distributor') {
+		echo $distributor->update();
+	}
+
+	if ($_POST['action'] == 'delete distributor') {
+		echo $distributor->hapus();
+	}
+
+	if ($_POST['action'] == 'delete user') {
+		echo $user->hapus_user();
+	}
+
 }
 
  ?>

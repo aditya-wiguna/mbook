@@ -27,4 +27,4 @@ close.onclick = function(){
     closeModal();
 }
 
-//Link
+/*----------------------Validasi------------------------*/

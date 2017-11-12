@@ -1,7 +1,7 @@
 <?php
     session_start();
     include '../config/include.php';
-    $page = 'distributor';
+    $page = 'user';
     include 'header.php';
     
     if(is_null($_SESSION['username'])){
@@ -13,14 +13,13 @@
 
 <main>
     <div class="container">
-        <h1 class="text-blue">Distributor</h1><br>
-        <button id="openmodal" class="btn">Tambahkan Distributor</button>
+        <h1 class="text-blue">Users</h1><br>
         <!-- Modal -->
         <div class="modal" id="modal">
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close" id="close">&times;</span>
-                    <h2>Masukan/Update Distributor</h2>
+                    <h2>Update Users</h2>
                 </div>
                 <div class="modal-body">
                     <form action="" method="post" id="distributor-form">

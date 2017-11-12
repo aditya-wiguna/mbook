@@ -12,4 +12,7 @@ $kasir = new KasirController();
 include '../controller/BukuController.php';
 $buku = new BukuController();
 
+include '../controller/UserController.php';
+$user = new UserController();
+
  ?>
