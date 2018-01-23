@@ -1,4 +1,4 @@
-<!-- <script src="https://use.fontawesome.com/d1d1619e22.js"></script> -->
+<script src="https://use.fontawesome.com/46f7738169.js"></script>
 <script src="../assets/js/jquery-2.1.3.min.js"></script>
 <script src="../assets/js/jqueryui.js"></script>
 <script src="../assets/js/main.js"></script>

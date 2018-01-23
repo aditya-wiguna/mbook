@@ -21,7 +21,7 @@ class DistributorController extends crud
 		$alamat = $this->escape_string($_POST['alamat']);
 		$telephone = $this->escape_string($_POST['telephone']);
 
-		$query = "INSERT INTO `distributor`(`id`, `nama`, `alamat`, `telepon`) VALUES('$id', '$nama', '$alamat', '$telephone')";
+		$query = "INSERT INTO `distributor`(`id_distributor`, `nama_distributor`, `alamat`, `telepon`) VALUES('$id', '$nama', '$alamat', '$telephone')";
 		$result = $this->query($query);
 	}
 
@@ -34,10 +34,10 @@ class DistributorController extends crud
 		// $alamat = $this->escape_string($_POST['alamat']);
 		// $telephone = $this->escape_string($_POST['telephone']);
 
-		$query = "SELECT * FROM distributor WHERE id = '$id'";
+		$query = "SELECT * FROM distributor WHERE id_distributor = '$id'";
 		$result = $this->select($query);
 		foreach ($result as $s) {
-			$output['nama'] = $s['nama'];
+			$output['nama'] = $s['nama_distributor'];
 			$output['alamat'] = $s['alamat'];
 			$output['telephone'] = $s['telepon'];
 		}
@@ -54,7 +54,7 @@ class DistributorController extends crud
 		$alamat = $this->escape_string($_POST['alamat']);
 		$telephone = $this->escape_string($_POST['telephone']);
 
-		$query = "UPDATE distributor SET nama = '$nama', alamat = '$alamat', telepon = '$telephone' WHERE id = '$id'";
+		$query = "UPDATE distributor SET nama_distributor = '$nama', alamat = '$alamat', telepon = '$telephone' WHERE id_distributor = '$id'";
 
 		$this->query($query);
 	}
@@ -62,8 +62,7 @@ class DistributorController extends crud
 	public function hapus()
 	{
 		$id = $this->escape_string($_POST['id']);
-
-		$this->delete($id, 'distributor');
+		$this->delete($id, 'id_distributor', 'distributor');
 	}
 	// TODO: 14 membuat fungsi untuk menampilkan 1 buku
 

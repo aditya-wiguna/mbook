@@ -36,7 +36,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <h3>Footer</h3>
+                    <h3></h3>
                 </div>
             </div>
         </div>

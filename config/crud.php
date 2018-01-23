@@ -38,9 +38,9 @@ class crud extends database
 		}
 	}
 	// complete:4 membuat fungsi untuk menghapus datu data
-	public function delete($id, $table)
+	public function delete($id, $param, $table)
 	{
-		$query = "DELETE FROM $table WHERE id = $id";
+		$query = "DELETE FROM $table WHERE $param = $id";
 
 		$result = $this->db->query($query);
 

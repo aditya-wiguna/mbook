@@ -50,6 +50,7 @@ $(document).ready(function(){
 	$(document).on('click', '.update', function(){
 		var id = $(this).attr('id');
 		var action = 'single distributor';
+		console.log(id);
 
 		$.ajax({
 			url:'../model/Model.php',

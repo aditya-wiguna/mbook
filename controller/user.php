@@ -3,7 +3,7 @@
 include '../config/crud.php';
 $crud = new crud();
 
-$query = "SELECT * FROM users WHERE status = '1' OR status = '2'";
+$query = "SELECT * FROM kasir WHERE akses = '1' OR akses = '2'";
 
 $result = $crud->select($query);
 

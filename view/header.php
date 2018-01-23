@@ -33,7 +33,7 @@
 			<?php } elseif ($_SESSION['status'] == '1') { ?>
 				<li class="<?php if($page == 'penjualan'){echo 'active';}else{echo '';} ?>"><a href=""><i class="fa fa-print"></i>&nbsp;&nbsp;Penjualan</a></li>
 			<?php } elseif ($_SESSION['status'] == '2') { ?>
-				<li class="<?php if($page == 'book'){echo 'active';}else{echo '';} ?>"><a href=""><i class="fa fa-book"></i>&nbsp;&nbsp;Buku</a></li>
+				<li class="<?php if($page == 'book'){echo 'active';}else{echo '';} ?>"><a href="book.php"><i class="fa fa-book"></i>&nbsp;&nbsp;Buku</a></li>
 			<?php } ?>
 			<li><form action="../model/Model.php" method="post">
 				<button type="submit" id="logout" name="logout"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;Logout</button>

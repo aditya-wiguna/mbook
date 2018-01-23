@@ -26,8 +26,9 @@ class BukuController extends crud
 		$harga_pokok = $this->escape_string($_POST['harga_pokok']);
 		$harga_jual = $this->escape_string($_POST['harga_jual']);
 		$ppn = $this->escape_string($_POST['ppn']);
+		$diskon = $this->escape_string($_POST['diskon']);
 
-		$query = "INSERT INTO `buku`(`id`, `judul`, `isbn`, `penulis`, `penerbit`, `tahun`, `stok`, `harga_pokok`, `harga_jual`, `ppn`, `item`) VALUES ('$id','$judul','$isbn','$penulis','$penerbit','$tahun','$stok','$harga_pokok','$harga_jual','$ppn',1)";
+		$query = "INSERT INTO `buku`(`id_buku`, `judul`, `isbn`, `penulis`, `penerbit`, `tahun`, `stok`, `harga_pokok`, `harga_jual`, `ppn`, `diskon`) VALUES ('$id','$judul','$isbn','$penulis','$penerbit','$tahun','$stok','$harga_pokok','$harga_jual','$ppn', $diskon)";
 
 		$this->query($query);
 
@@ -52,11 +53,11 @@ class BukuController extends crud
 		foreach ($result as $a) {
 			$output .= "
 			<tr>
-                <td>".$a['id']."</td>
+                <td>".$a['id_buku']."</td>
                 <td>".$a['judul']."</td>
                 <td>".$a['tahun']."</td>
-                <td><button type='button' name='button' id='".$a['id']."' class='btn update'>Update</button></td>
-                <td><button type='button' name='button' id='".$a['id']."' class='btn red delete'>Hapus</button></td>
+                <td><button type='button' name='button' id='".$a['id_buku']."' class='btn update'>Update</button></td>
+                <td><button type='button' name='button' id='".$a['id_buku']."' class='btn red delete'>Hapus</button></td>
             </tr>
 
 			";
@@ -69,7 +70,7 @@ class BukuController extends crud
 	{
 		$output = '';
 		$id = $this->escape_string($_POST['buku_id']);
-		$query = "SELECT * FROM buku WHERE id = '$id'";
+		$query = "SELECT * FROM buku WHERE id_buku = '$id'";
 		$result = $this->select($query);
 		foreach ($result as $key) {
 			$output['judul'] = $key['judul'];
@@ -81,6 +82,7 @@ class BukuController extends crud
 			$output['harga_pokok'] = $key['harga_pokok'];
 			$output['harga_jual'] = $key['harga_jual'];
 			$output['ppn'] = $key['ppn'];
+			$output['diskon'] = $key['diskon'];
 		}
 		echo json_encode($output);
 	}
@@ -98,8 +100,9 @@ class BukuController extends crud
 		$harga_pokok = $this->escape_string($_POST['harga_pokok']);
 		$harga_jual = $this->escape_string($_POST['harga_jual']);
 		$ppn = $this->escape_string($_POST['ppn']);
+		$diskon = $this->escape_string($_POST['diskon']);
 
-		$query = "UPDATE `buku` SET `judul`='$judul',`isbn`='$isbn',`penulis`='$penulis',`penerbit`='$penerbit',`tahun`='$tahun',`stok`='$stok',`harga_pokok`='$harga_pokok',`harga_jual`='$harga_jual',`ppn`='$ppn' WHERE `id` = '$id'";
+		$query = "UPDATE `buku` SET `judul`='$judul',`isbn`='$isbn',`penulis`='$penulis',`penerbit`='$penerbit',`tahun`='$tahun',`stok`='$stok',`harga_pokok`='$harga_pokok',`harga_jual`='$harga_jual',`ppn`='$ppn', `diskon`='$diskon' WHERE `id_buku` = '$id'";
 		$this->query($query);
 	}
 
@@ -107,7 +110,7 @@ class BukuController extends crud
 	public function delete_buku()
 	{
 		$id = $this->escape_string($_POST['buku_id']);
-		$this->delete($id, 'buku');
+		$this->delete($id,'id_buku', 'buku');
 	}
 	// TODO: 14 membuat fungsi untuk menampilkan 1 buku
 
