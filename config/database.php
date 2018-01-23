@@ -5,7 +5,7 @@ class database{
 	private $host = 'localhost';
 	private $user = 'root';
 	private $pass = '';
-	private $database = 'tokobuku';
+	private $database = 'mbook';
 
 	protected $db;
 

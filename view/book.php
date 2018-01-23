@@ -42,13 +42,15 @@
                         <input type="text" placeholder="Harga Jual" name="harga_jual" id="harga_jual"><br><br>
                         <label for="">PPN</label>
                         <input type="text" placeholder="PPN" name="ppn" id="ppn"><br><br>
+                        <label for="">Diskon</label>
+                        <input type="text" placeholder="Diskon" name="diskon" id="diskon"><br><br>
                         <input type="hidden" name="action" id="action" value="">
                         <input type="hidden" name="buku_id" id="buku_id" value="">
                         <button class="btn" id="btn_submit_book">Simpan</button>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <h3>Footer</h3>
+                    <h3></h3>
                 </div>
             </div>
         </div>

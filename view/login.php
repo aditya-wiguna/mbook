@@ -31,8 +31,8 @@ include '../config/include.php';
             <option value="2">Distributor</option>
           </select><br><br>
 
-          <input type="submit" name="login" value="Login" class="btn left">
-          <a href="register.php" class="btn right">Register</a><br><br><br>
+          <center><input type="submit" name="login" value="Login" class="btn"></center>
+          <!-- <a href="register.php" class="btn right">Register</a><br><br><br> -->
         </form>
       </div>
     </div>

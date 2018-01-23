@@ -16,12 +16,12 @@ window.onclick = function(){
     }
 }
 
-btn_book.onclick = function(){
-    openModal();
-    $('#book-form')[0].reset();
-    $('#action').val('insert buku');
-    $('#buku_id').val('');
-}
+// btn_book.onclick = function(){
+//     openModal();
+//     $('#book-form')[0].reset();
+//     $('#action').val('insert buku');
+//     $('#buku_id').val('');
+// }
 
 close.onclick = function(){
     closeModal();

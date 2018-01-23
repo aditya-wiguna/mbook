@@ -6,6 +6,8 @@
 
 	$b = json_decode($jsonBuku);
 
-	print_r($b);
+	// print_r($b);
+
+	echo $jsonBuku;
 
 ?>

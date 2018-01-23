@@ -32,6 +32,7 @@ $(document).ready(function(){
 		var harga_pokok = $('#harga_pokok').val();
 		var harga_jual = $('#harga_jual').val();
 		var ppn = $('#ppn').val();
+		var diskon = $('#diskon').val();
 
 		if (judul, isbn, penerbit, penulis, tahun, stok, harga_pokok, harga_jual, ppn == '') {
 			alert("Tolong Lengkapi Field yang Kosong");
@@ -76,6 +77,7 @@ $(document).ready(function(){
 				$('#harga_pokok').val(data.harga_pokok);
 				$('#harga_jual').val(data.harga_jual);
 				$('#ppn').val(data.ppn);
+				$('#diskon').val(data.diskon);
 				$('#action').val('update buku');
 				$('#buku_id').val(buku_id);
 			}

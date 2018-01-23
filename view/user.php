@@ -14,28 +14,39 @@
 <main>
     <div class="container">
         <h1 class="text-blue">Users</h1><br>
+        <button id="openmodal" class="btn">Tambahkan User</button>
         <!-- Modal -->
         <div class="modal" id="modal">
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close" id="close">&times;</span>
-                    <h2>Update Users</h2>
+                    <h2>Masukan/Update Buku</h2>
                 </div>
                 <div class="modal-body">
-                    <form action="" method="post" id="distributor-form">
+                    <form action="" method="post" id="user-form">
+                        <label for="">Username</label>
+                        <input type="text" placeholder="Username" name="username" id="username"><br><br>
+                        <label for="">Password</label>
+                        <input type="password" placeholder="Password" name="password" id="password"><br><br>
+                        <label for="akses">Akses</label><br>
+                        <select name="akses" id="akses">
+                            <option value="1">Kasir</option>
+                            <option value="2">Distributor</option>
+                        </select><br><br>
                         <label for="">Nama</label>
                         <input type="text" placeholder="Nama" name="nama" id="nama"><br><br>
                         <label for="">Alamat</label>
                         <input type="text" placeholder="Alamat" name="alamat" id="alamat"><br><br>
-                        <label for="">No Telephone</label>
-                        <input type="text" placeholder="Telephone" name="telephone" id="telephone" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
-                        <input type="hidden" name="action" id="action">
-                        <input type="hidden" name="distributor_id" id="distributor_id" value="">
-                        <button class="btn" id="btn_submit_distributor">Simpan</button>
+                        <label for="">Telepon</label>
+                        <input type="text" placeholder="Telepon" name="telepon" id="telepon"><br><br>
+
+                        <input type="hidden" name="action" id="action" value="">
+                        <input type="hidden" name="kasir_username" id="kasir_username" value="">
+                        <button class="btn" id="btn_submit_user">Simpan</button>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <h3>Footer</h3>
+                    <h3></h3>
                 </div>
             </div>
         </div>

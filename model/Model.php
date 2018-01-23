@@ -56,6 +56,18 @@ if (isset($_POST['action'])) {
 		echo $user->hapus_user();
 	}
 
+	if($_POST['action'] == 'insert user'){
+		echo $auth->register();
+	}
+
+	if($_POST['action'] == 'single user'){
+		echo $user->show();
+	}
+
+	if($_POST['action'] == 'update user'){
+		echo $user->update();
+	}
+
 }
 
  ?>

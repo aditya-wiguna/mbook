@@ -21,11 +21,11 @@ $output .= '
 foreach ($result as $r) {
 	$output .= "
 	<tr>
-        <td>".$r['id']."</td>
-        <td>".$r['nama']."</td>
+        <td>".$r['id_distributor']."</td>
+        <td>".$r['nama_distributor']."</td>
         <td>".$r['telepon']."</td>
-        <td><button type='button' name='button' id='".$r['id']."' class='btn update'>Update</button></td>
-        <td><button type='button' name='button' id='".$r['id']."' class='btn red delete'>Hapus</button></td>
+        <td><button type='button' name='button' id='".$r['id_distributor']."' class='btn update'>Update</button></td>
+        <td><button type='button' name='button' id='".$r['id_distributor']."' class='btn red delete'>Hapus</button></td>
     </tr>
 	";
 }
